@@ -12,12 +12,6 @@ lógica de programação de forma mais prática.
 - Utilizar funções auxiliares como len(), max() e min()
 - Resolver exercícios práticos envolvendo entrada e processamento de dados
 
-📂 Estrutura da Semana
-semana-03-estruturas/
-│
-├── dia-09-listas.py
-└── README.md
-
 🧠 Conteúdos Estudados
 
 - Criação de listas
