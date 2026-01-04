@@ -9,7 +9,7 @@ DICA MENTAL:
     O PRIMEIRO NÚMERO DA LISTA VIRA O PADRÃO DE COMPARAÇÃO.
 """
 #VARIÁVEIS UTILIZADAS
-lista = [2,9,4,8,6,]
+lista = [2,9,4,8,7,]
 menor = lista[0]
 maior = lista[0]
 
