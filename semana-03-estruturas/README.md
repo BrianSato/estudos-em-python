@@ -1,42 +1,83 @@
-📘 Semana 3 – Estruturas de Dados (Listas)
+📘 Semana 3 – Estruturas de Dados (Listas) e Mini Sistema em Python
 
-Nesta semana, iniciei o estudo de estruturas de dados em Python, com foco em listas (list).
-O objetivo foi aprender a trabalhar com conjuntos de dados, em vez de valores isolados, aplicando 
-lógica de programação de forma mais prática.
+Nesta semana, aprofundei meus estudos em Python com foco em estruturas de dados, especialmente listas ('list'), evoluindo de exercícios simples para a construção de um pequeno sistema interativo em terminal.
 
-🎯 Objetivos da Semana
+O projeto passou a utilizar menus, funções e persistência de dados em arquivo, simulando um cenário mais próximo de uma aplicação real.
 
-- Entender o conceito de listas em Python
-- Criar e manipular listas
-- Percorrer listas usando for
-- Utilizar funções auxiliares como len(), max() e min()
-- Resolver exercícios práticos envolvendo entrada e processamento de dados
+---
 
-🧠 Conteúdos Estudados
+## 🎯 Objetivos da Semana
 
-- Criação de listas
+- Compreender o conceito de listas em Python
+- Criar e manipular listas dinamicamente
+- Trabalhar com entrada de dados do usuário
+- Aplicar lógica de programação para análise de dados
+- Organizar o código utilizando funções
+- Introduzir persistência de dados em arquivos de texto
+
+---
+
+## 🧠 Conteúdos Estudados
+
+- Criação e manipulação de listas
 - Acesso por índice
-- Iteração com for
-- Adição de elementos com append()
-- Cálculo de quantidade de elementos
-- Identificação de maior e menor valor em listas
-- Entrada de dados do usuário armazenada em listas
+- Iteração com 'for' e 'while'
+- Adição de elementos com 'append()'
+- Uso de funções auxiliares ('len()', 'max()', 'min()')
+- Criação de funções para modularização do código
+- Leitura e escrita em arquivos de texto ('open', 'with')
+- Conversão de tipos ('str' ↔ 'int')
+- Tratamento básico de erros
 
-🧪 Exercícios Desenvolvidos
+---
 
-Impressão de todos os elementos de uma lista
-Identificação do maior e menor valor
-Criação de listas dinâmicas a partir da entrada do usuário
+## 🧪 Funcionalidades Implementadas
 
-🚀 Observações
+- Menu interativo em terminal
+- Inserção dinâmica de números em uma lista
+- Exibição da lista de valores informados
+- Cálculo de estatísticas:
+  - Soma dos valores
+  - Média
+  - Maior e menor número
+  - Quantidade de números pares e ímpares
+- Salvamento dos dados em arquivo de texto
+- Carregamento dos dados salvos entre execuções
+- Validação de lista vazia e arquivo inexistente
 
-Esta semana marca a transição do uso de variáveis isoladas para o trabalho com coleções de dados, 
-preparando o caminho para estudos futuros como:
+---
 
- - listas avançadas
- - dicionários
- - funções
- - organização de código
+## 🧩 Estrutura do Programa
 
-📌 Este repositório faz parte da minha jornada de aprendizado em Python, com foco em lógica de 
-programação e boas práticas.
+O programa funciona através de um menu principal que permite ao usuário:
+
+1. Adicionar números à lista  
+2. Visualizar os números armazenados  
+3. Exibir estatísticas da lista  
+4. Salvar os dados em arquivo  
+5. Carregar os dados salvos anteriormente  
+0. Encerrar o programa  
+
+---
+
+## 🚀 Observações
+
+Esta semana marcou a transição do uso de variáveis isoladas para o trabalho com coleções de dados e estruturas mais organizadas, introduzindo conceitos importantes como:
+
+- Persistência de dados
+- Separação de responsabilidades
+- Organização e reutilização de código
+- Simulação de estado entre execuções do programa
+
+Esses conceitos preparam o caminho para estudos futuros envolvendo:
+
+- Dicionários
+- Arquivos CSV
+- Tratamento avançado de erros
+- Programação orientada a objetos
+
+---
+
+📌 Este repositório faz parte da minha jornada de aprendizado em Python, com foco em lógica de programação, organização de código e boas práticas.
+
+
