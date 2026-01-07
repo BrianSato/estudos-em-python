@@ -1,22 +1,10 @@
-"""
-Funcionalidades da primeira versão
-    - Menu interativo em console
-    - Adicionar uma despesa:
-        - valor (float)
-        - descrição (string)
-    - Listar todas as despesas
-    - Mostrar total gasto
-    - Validação de entrada (try/except)
-    - Código limpo e organizado
-"""
-
-#FUNCOES UTILIZADAS
+# LISTA FUNCOES UTILIZADAS
 def menu():
-    print("-------MENU-------")
-    print(" 1 - ADICIONAR DESPESA:")
-    print(" 2 - LISTAR TODAS AS DESPESAS")
-    print(" 3 - MOSTRAR TOTAL GASTO:")
-    print(" 0 - ENCERRA O PROGRAMA:")
+    print("\n-------GERENCIADOR DE DESPESAS-------")
+    print(" 1 - Adicionar despesa:")
+    print(" 2 - Listar despesas")
+    print(" 3 - Mostrar total gasto")
+    print(" 0 - Sair")
 
 def adiciona_despesa(despesas):
     try:
@@ -29,9 +17,9 @@ def adiciona_despesa(despesas):
         }
 
         despesas.append(despesa)
-        print("Despesa adicionada com sucesso!")
+        print("✅ Despesa adicionada com sucesso!")
     except ValueError:
-        print("Valor inválido. Tente novamente.")
+        print("❌ Valor inválido. Tente novamente")
 
 
 def listar_despesas(despesas):
@@ -44,10 +32,15 @@ def listar_despesas(despesas):
          print(f"{i}. R$ {despesa['valor']:.2f} - {despesa['descricao']}")
 
 def total_gasto(despesas):
+
+    if not  despesas:
+        print("Nenhuma despesas adicionada.")
+        return
+
     total = 0
     for despesa in despesas:
         total += despesa["valor"]
-    print(f"O total das despesas é R$:{total:.2f}")
+    print(f"\n💰 Total gasto: R$ {total:.2f}")
 
 
 #VARIÁVEIS UTILIZADAS
@@ -55,7 +48,6 @@ despesas = []
 
 # INICIO DO PROGRAMA
 while True:
-
     menu()
     try:
         opcao = int(input(" DIGITE UMA DAS OPÇÕES ACIMA:"))
@@ -70,7 +62,7 @@ while True:
     elif opcao == 3:
         total_gasto(despesas)
     elif  opcao == 0:
-        print("Programa Finalizado")
+        print("👋 Programa encerrado.")
         break
     else:
-        print("Opção Inválida")
+        print("❌ Opção inválida.")
