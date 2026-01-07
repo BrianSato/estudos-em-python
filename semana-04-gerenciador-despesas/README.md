@@ -1,10 +1,10 @@
-##📘 Semana 4 – Projeto Gerenciador de Despesas Pessoais
+# 📘 Semana 4 – Projeto Gerenciador de Despesas Pessoais
 
 Nesta semana, iniciei o desenvolvimento de um projeto prático em Python, aplicando de forma integrada os conceitos estudados até agora.
 O foco foi sair de exercícios isolados e trabalhar em um sistema simples, porém real, simulando um gerenciador de despesas pessoais via terminal.
 
 ---
-##🎯 Objetivos da Semana
+# 🎯 Objetivos da Semana
 
  - Consolidar o uso de listas, dicionários e funções
  - Criar um programa baseado em menu interativo
@@ -13,7 +13,7 @@ O foco foi sair de exercícios isolados e trabalhar em um sistema simples, poré
  - Introduzir boas práticas de estruturação de código
  - Preparar base para persistência de dados (arquivos)
 ---
-##🧠 Conceitos Aplicados
+# 🧠 Conceitos Aplicados
 
  - Funções (def)
  - Estruturas condicionais (if / elif / else)
@@ -24,7 +24,7 @@ O foco foi sair de exercícios isolados e trabalhar em um sistema simples, poré
  - Organização de código por responsabilidade
  - Tratamento básico de erros (try / except)
 ---
-##🧾 Funcionalidades do Projeto
+# 🧾 Funcionalidades do Projeto
 
  - O sistema funciona via menu no terminal, permitindo:
  - Adicionar despesas
@@ -44,7 +44,7 @@ As despesas são armazenadas em uma lista de dicionários, no formato:
 }
 ```
 ---
-##🛠️ Estrutura do Projeto
+# 🛠️ Estrutura do Projeto
 ```bash
 semana-4-gerenciador-despesas/
 ├── gerenciador_despesas.py
@@ -52,7 +52,7 @@ semana-4-gerenciador-despesas/
 └── dados.txt   (em desenvolvimento)
 ```
 ---
-##🚀 Evolução Planejada
+# 🚀 Evolução Planejada
 
 Ao longo da semana, o projeto será incrementado com:
 
@@ -62,7 +62,7 @@ Ao longo da semana, o projeto será incrementado com:
  - Refatoração do código
  - Melhorias de legibilidade e organização
 ---
-##📌 Observações
+# 📌 Observações
 
 Este projeto faz parte da minha jornada de aprendizado em Python, com foco em:
 
