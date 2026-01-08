@@ -43,11 +43,21 @@ As despesas são armazenadas em uma lista de dicionários, no formato:
     "descricao": "Mercado"
 }
 ```
+## 🗂️ Organização do Projeto
+
+O projeto passou a ser estruturado em módulos, seguindo boas práticas de organização em Python:
+
+- `despesas_principal.py`: responsável pelo menu e fluxo principal do programa
+- `despesas_funcoes.py`: contém as funções relacionadas ao gerenciamento das despesas
+
+Essa separação melhora a legibilidade, manutenção e escalabilidade do código.
+
 ---
 # 🛠️ Estrutura do Projeto
 ```bash
 semana-4-gerenciador-despesas/
-├── gerenciador_despesas.py
+├── despesas_principal.py
+├── despesas_funcoes.py
 ├── README.md
 └── dados.txt   (em desenvolvimento)
 ```
