@@ -49,6 +49,7 @@ O projeto passou a ser estruturado em módulos, seguindo boas práticas de organ
 
 - `despesas_principal.py`: responsável pelo menu e fluxo principal do programa
 - `despesas_funcoes.py`: contém as funções relacionadas ao gerenciamento das despesas
+- `depesas_arquivo.py`: contém as funções relacionadas ao salvamento e carregamento das despesas do arquivo.
 
 Essa separação melhora a legibilidade, manutenção e escalabilidade do código.
 
@@ -58,8 +59,9 @@ Essa separação melhora a legibilidade, manutenção e escalabilidade do códig
 semana-4-gerenciador-despesas/
 ├── despesas_principal.py
 ├── despesas_funcoes.py
+├── despesas_arquivo.py
 ├── README.md
-└── dados.txt   (em desenvolvimento)
+└── despesas.txt 
 ```
 ---
 # 🚀 Evolução Planejada
@@ -67,8 +69,8 @@ semana-4-gerenciador-despesas/
 Ao longo da semana, o projeto será incrementado com:
 
  - Estatísticas mais completas
- - Salvamento de dados em arquivo
- - Carregamento automático das despesas
+ - Salvamento de dados em arquivo (OK)
+ - Carregamento automático das despesas (OK)
  - Refatoração do código
  - Melhorias de legibilidade e organização
 ---
