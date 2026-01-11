@@ -1,86 +1,96 @@
-# 📘 Semana 4 – Projeto Gerenciador de Despesas Pessoais
+# 💰 Gerenciador de Despesas em Python (CLI)
 
-Nesta semana, iniciei o desenvolvimento de um projeto prático em Python, aplicando de forma integrada os conceitos estudados até agora.
-O foco foi sair de exercícios isolados e trabalhar em um sistema simples, porém real, simulando um gerenciador de despesas pessoais via terminal.
+Projeto desenvolvido com o objetivo de consolidar conceitos fundamentais de programação em Python
+por meio da construção de um sistema real de gerenciamento de despesas pessoais via terminal.
 
----
-# 🎯 Objetivos da Semana
-
- - Consolidar o uso de listas, dicionários e funções
- - Criar um programa baseado em menu interativo
- - Trabalhar com organização e evolução incremental do código
- - Aplicar lógica para cálculos financeiros simples
- - Introduzir boas práticas de estruturação de código
- - Preparar base para persistência de dados (arquivos)
----
-# 🧠 Conceitos Aplicados
-
- - Funções (def)
- - Estruturas condicionais (if / elif / else)
- - Laços de repetição (while, for)
- - Listas (list)
- - Dicionários (dict)
- - Entrada e saída de dados (input, print)
- - Organização de código por responsabilidade
- - Tratamento básico de erros (try / except)
----
-# 🧾 Funcionalidades do Projeto
-
- - O sistema funciona via menu no terminal, permitindo:
- - Adicionar despesas
- - Valor da despesa
- - Descrição da despesa
- - Listar todas as despesas cadastradas
- - Exibir estatísticas, como:
- - Total gasto
- - (Em evolução) média, maior e menor despesa
- - Encerrar o programa
----
-As despesas são armazenadas em uma lista de dicionários, no formato:
-```bash
-{
-    "valor": 50.0,
-    "descricao": "Mercado"
-}
-```
-## 🗂️ Organização do Projeto
-
-O projeto passou a ser estruturado em módulos, seguindo boas práticas de organização em Python:
-
-- `despesas_principal.py`: responsável pelo menu e fluxo principal do programa
-- `despesas_funcoes.py`: contém as funções relacionadas ao gerenciamento das despesas
-- `depesas_arquivo.py`: contém as funções relacionadas ao salvamento e carregamento das despesas do arquivo.
-
-Essa separação melhora a legibilidade, manutenção e escalabilidade do código.
+O foco do projeto é sair de exercícios isolados e aplicar boas práticas de organização, modularização
+e persistência de dados, resultando em um código claro, evolutivo e adequado para portfólio.
 
 ---
-# 🛠️ Estrutura do Projeto
-```bash
-semana-4-gerenciador-despesas/
-├── despesas_principal.py
-├── despesas_funcoes.py
-├── despesas_arquivo.py
-├── README.md
-└── despesas.txt 
+
+## 🎯 Funcionalidades
+
+- Adicionar despesas com:
+  - valor
+  - descrição
+  - categoria padronizada
+- Listar todas as despesas cadastradas
+- Exibir estatísticas:
+  - total gasto
+  - média das despesas
+  - maior e menor valor
+- Filtrar despesas por categoria
+- Persistência de dados em arquivo JSON
+- Interface via menu no terminal (CLI)
+
+---
+
+## 🧱 Estrutura do Projeto
+
+```text
+.
+├── despesas_principal.py      # Ponto de entrada do programa
+├── despesas_menu.py           # Exibição do menu e opções
+├── despesas_adiciona.py       # Inclusão de despesas e escolha de categorias
+├── despesas_listar.py         # Listagem de despesas
+├── despesas_filtrar.py        # Filtros (ex: por categoria)
+├── despesas_calculos.py       # Estatísticas e cálculos
+├── despesas_arquiva.py        # Persistência (JSON)
+└── despesas.json              # Arquivo de dados
 ```
 ---
-# 🚀 Evolução Planejada
+## 🧠 Conceitos Aplicados
 
-Ao longo da semana, o projeto será incrementado com:
-
- - Estatísticas mais completas
- - Salvamento de dados em arquivo (OK)
- - Carregamento automático das despesas (OK)
- - Refatoração do código
- - Melhorias de legibilidade e organização
+- Estruturas de dados (listas e dicionários)
+- Modularização e separação de responsabilidades
+- Funções puras para regras de negócio
+- Persistência de dados com JSON
+- Tratamento de exceções (try/except)
+- Boas práticas de organização de código
+- Padrão de commits (Conventional Commits)
 ---
-# 📌 Observações
+## 📌 Arquitetura
 
-Este projeto faz parte da minha jornada de aprendizado em Python, com foco em:
+O projeto segue uma separação clara entre:
 
- - lógica de programação
- - construção de projetos reais
- - desenvolvimento progressivo
- - boas práticas iniciais de código
+- Interface (UI)
+  
+Entrada de dados e exibição de informações ao usuário.
 
-Cada versão representa uma evolução do entendimento e da aplicação dos conceitos estudados.
+- Domínio (Regras de Negócio)
+  
+Funções responsáveis apenas por processar dados, sem input ou print.
+
+Essa abordagem facilita manutenção, testes e futuras evoluções
+(ex: interface gráfica ou aplicação web).
+---
+
+## 🚀 Como Executar
+
+1- Clone o repositório:
+```
+git clone <url-do-repositorio>
+```
+
+2- Acesse a pasta do projeto:
+```
+cd gerenciador-despesas-python
+```
+
+3- Execute o programa:
+```
+python despesas_principal.py
+```
+---
+## 🔮 Próximos Passos (Roadmap)
+
+- Adicionar data da despesa
+- Relatórios por período
+- Totais por categoria
+- Melhorias na experiência do usuário
+- Evolução para interface gráfica ou web
+---
+## 🧑‍💻 Autor
+
+Projeto desenvolvido como parte da jornada de aprendizado em programação,
+com foco em Python, lógica, organização e boas práticas.
