@@ -1,3 +1,5 @@
+from datetime import datetime
+
 CATEGORIAS = {
         1: "Alimentos",
         2: "Pagamento de Boletos",
@@ -20,14 +22,29 @@ def adiciona_despesa(despesas):
         valor = float(input("Informe o valor:"))
         descricao = input("Informe a descrição: ")
         categoria = escolher_categorias()
+        data = obter_data()
 
         despesa = {
             "valor": valor,
             "descricao": descricao,
-            "categoria" : categoria
+            "categoria" : categoria,
+            "data": data
         }
 
         despesas.append(despesa)
         print("✅ Despesa adicionada com sucesso!")
     except ValueError:
         print("❌ Valor inválido. Tente novamente")
+
+def obter_data():
+    while True:
+        data = input("Informe a data (YYYY=MM-DD) ou ENTER para hoje:").strip()
+
+        if not data:
+            return datetime.today().strftime("%Y-%m-%d")
+
+        try:
+            datetime.strptime(data, "%Y-%m-%d")
+            return data
+        except ValueError:
+            print("🚨Data inválida, tente novamente.")
