@@ -1,4 +1,4 @@
-from despesas_menu import ERROS,MENSAGENS
+from despesas_mensagens import ERROS,MENSAGENS
 
 def msg_lista():
     print(MENSAGENS["titulo_despesa"])
