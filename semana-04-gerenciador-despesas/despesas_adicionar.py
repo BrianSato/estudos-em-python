@@ -1,5 +1,5 @@
 from datetime import datetime
-from despesas_menu import CATEGORIAS, ERROS, MENSAGENS, INPUTS
+from despesas_mensagens import CATEGORIAS, ERROS, MENSAGENS, INPUTS
 
 def ler_opcao():
     try:
