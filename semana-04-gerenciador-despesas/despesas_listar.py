@@ -1,9 +1,14 @@
+from despesas_menu import ERROS,MENSAGENS
+
+def msg_lista():
+    print(MENSAGENS["titulo_despesa"])
+
 def listar_despesas(despesas):
     if not despesas:
-        print("Nenhuma despesa adicionada")
+        print(ERROS["sem_despesa"])
         return
-    print("------LISTA DE DESPESAS------")
 
+    msg_lista()
     for i, despesa in enumerate(despesas, start=1):
         print(
             f"{i}.{despesa.get('data', 'sem data')} - " 
