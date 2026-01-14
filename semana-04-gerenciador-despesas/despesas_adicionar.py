@@ -1,26 +1,27 @@
 from datetime import datetime
+from despesas_menu import CATEGORIAS, ERROS, MENSAGENS, INPUTS
 
-CATEGORIAS = {
-        1: "Alimentos",
-        2: "Pagamento de Boletos",
-        3: "Gastos com o Carro",
-        4: "Cartao de Credito"
-    }
+def ler_opcao():
+    try:
+       return int(input(INPUTS["titulo_opcao"]))
+    except ValueError:
+        print(ERROS["erro_valor"])
+        return None
 
 def escolher_categorias():
-    print("---- Opcões de Categoria: ----")
+    print(MENSAGENS["opcao_categoria"])
     for codigo, nome in CATEGORIAS.items():
         print(f"{codigo} - {nome}")
     try:
-        opcao = int(input("Informe o número da categoria:"))
-        return CATEGORIAS.get(opcao, "Outras Despesas")
+        opcao = int(input(INPUTS["categoria_n"]))
+        return CATEGORIAS.get(opcao, MENSAGENS["outras_despesas"])
     except ValueError:
-        return ("Outras Despesas")
+        return (MENSAGENS["outras_despesas"])
 
 def adiciona_despesa(despesas):
     try:
-        valor = float(input("Informe o valor:"))
-        descricao = input("Informe a descrição: ")
+        valor = float(input(INPUTS["categoria_v"]))
+        descricao = input(INPUTS["descricao"])
         categoria = escolher_categorias()
         data = obter_data()
 
@@ -32,13 +33,13 @@ def adiciona_despesa(despesas):
         }
 
         despesas.append(despesa)
-        print("✅ Despesa adicionada com sucesso!")
+        print(MENSAGENS["despesa_adicionada"])
     except ValueError:
-        print("❌ Valor inválido. Tente novamente")
+        print(ERROS["erro_valor"])
 
 def obter_data():
     while True:
-        data = input("Informe a data (YYYY=MM-DD) ou ENTER para hoje:").strip()
+        data = input(INPUTS["data"]).strip()
 
         if not data:
             return datetime.today().strftime("%Y-%m-%d")
@@ -47,4 +48,4 @@ def obter_data():
             datetime.strptime(data, "%Y-%m-%d")
             return data
         except ValueError:
-            print("🚨Data inválida, tente novamente.")
+            print(MENSAGENS["data_final"])
